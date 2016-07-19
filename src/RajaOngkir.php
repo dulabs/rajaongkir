@@ -1,10 +1,10 @@
 <?php
 
-namespace RajaOngkir;
+namespace Dulabs\RajaOngkir;
 
-use RajaOngkir\App\Provinsi;
-use RajaOngkir\App\Kota;
-use RajaOngkir\App\Cost;
+use Dulabs\RajaOngkir\App\Provinsi;
+use Dulabs\RajaOngkir\App\Kota;
+use Dulabs\RajaOngkir\App\Cost;
 
 class RajaOngkir {
 

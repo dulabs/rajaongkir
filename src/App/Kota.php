@@ -1,6 +1,6 @@
 <?php
 
-namespace RajaOngkir\App;
+namespace Dulabs\RajaOngkir\App;
 
 class Kota extends Api {
 	protected $method = "city";

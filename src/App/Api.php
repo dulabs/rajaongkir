@@ -1,6 +1,6 @@
 <?php
 
-namespace RajaOngkir\App;
+namespace Dulabs\RajaOngkir\App;
 
 abstract class Api {
 	protected $method;

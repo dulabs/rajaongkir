@@ -1,6 +1,6 @@
 <?php
 
-namespace RajaOngkir\App;
+namespace Dulabs\RajaOngkir\App;
 
 class Provinsi extends Api {
 	protected $method = "province";

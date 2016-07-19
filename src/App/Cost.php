@@ -1,6 +1,6 @@
 <?php
 
-namespace RajaOngkir\App;
+namespace Dulabs\RajaOngkir\App;
 
 class Cost extends Api {
 	public function __construct($attributes){
