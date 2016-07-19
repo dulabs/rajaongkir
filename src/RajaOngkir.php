@@ -69,7 +69,7 @@ class RajaOngkir {
 		$cost->setKey(self::$key);
 		$cost->setEndpoint(self::$endpoint);
 
-		return $cost;
+		return $cost->getServices();
 	}
 
 }

@@ -34,7 +34,7 @@ class Cost extends Api {
 			]
 		];
 
-		return $this->GetData();
+		$this->GetData();
 	}
 
 	protected $method = "cost";
