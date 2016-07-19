@@ -1,14 +1,14 @@
 {
-    "name": "rizalafani/rajaongkir",
+    "name": "dulabs/rajaongkir",
     "description": "Raja Ongkir API PHP",
     "keywords": [
-        "rajaongkir", "application programming interface"
+        "rajaongkir", "application programming interface","api"
     ],
     "license": "MIT",
     "authors": [
         {
-            "name": "Ahmad Rizal Afani",
-            "email": "ahmadrizalafani@gmail.com",
+            "name": "Abdul Ibad",
+            "email": "dev@dulabs.com",
             "role": "Developer"
         }
     ],
