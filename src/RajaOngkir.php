@@ -23,16 +23,53 @@ class RajaOngkir {
 		self::GetInstance()->__call($name, $arguments);
 	}
 
+	/**
+	 * Raja Ongkir API Key
+	 * @var string
+	 */
+	protected static $key;
+
+	public function setKey($key)
+	{
+		self::$key = $key;
+	}
+
+	/**
+	 * Raja Ongkir API Endpoint
+	 * @var string
+	 */
+	protected $endpoint;
+
+	public function setEndpoint($endpoint)
+	{
+		$this->endpoint = $endpoint;
+	}
+
 	public function Provinsi(){
-		return new Provinsi;
+		$state = new Provinsi();
+
+		$state->setKey(self::$key);
+		$state->setEndpoint(self::$endpoint);
+
+		return $state;
 	}
 
 	public function Kota(){
-		return new Kota;
+		$city = new Kota;
+
+		$city->setKey(self::$key);
+		$city->setEndpoint(self::$endpoint);
+
+		return $city;
 	}
 
 	public function Cost($attributes){
-		return new Cost($attributes);
+		$cost = new Cost($attributes);
+
+		$cost->setKey(self::$key);
+		$cost->setEndpoint(self::$endpoint);
+
+		return $cost;
 	}
 
 }

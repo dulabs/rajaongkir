@@ -6,25 +6,30 @@ API ini digunakan ( baru tersedia ) untuk type akun starter
 
 Download package dengan composer
 ```
-composer require rizalafani/rajaongkir
+composer require dulabs/rajaongkir
 ```
 atau
 ```
 {
 	"require": {
-		"rizalafani/rajaongkir" : "dev-master"
+		"dulabs/rajaongkir" : "dev-master"
 	}
 }
-```
-
-Modifikasi file Api.php di vendor/rizalafani/rajaongkir/src/App/Api.php baris ke 11
-```php
-protected $apiKey = 'isi_api_key_anda_disini';
 ```
 
 Load package dengan autoload
 ```php
 include 'vendor/autoload.php';
+```
+
+Set Api Key
+```php
+RajaOngkir\RajaOngkir::setKey($your_key);
+```
+
+Set Api Endpoint, default starter
+```php
+RajaOngkir\RajaOngkir::setEndpoint($endpoint);
 ```
 
 Ambil data provinsi
@@ -81,3 +86,5 @@ $data = RajaOngkir\RajaOngkir::Cost([
 Kunjungi [rajaongkir](http://rajaongkir.com/)
 
 Documentasi akun [starter](http://rajaongkir.com/dokumentasi/starter)
+
+Forking From [https://github.com/rizalafani/rajaongkir](https://github.com/rizalafani/rajaongkir)

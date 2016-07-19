@@ -12,6 +12,16 @@ abstract class Api {
 
 	public function __construct(){}
 
+	public function setKey($key)
+	{
+		$this->apiKey = $key;
+	}
+
+	public function setEndpoint($endpoint)
+	{
+		$this->endPointAPI = $endPointAPI;
+	}
+
 	public function all(){
 		return $this->GetData()->data;
 	}
