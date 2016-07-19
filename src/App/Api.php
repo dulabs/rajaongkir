@@ -15,11 +15,13 @@ abstract class Api {
 	public function setKey($key)
 	{
 		$this->apiKey = $key;
+		return $this;
 	}
 
 	public function setEndpoint($endpoint)
 	{
-		$this->endPointAPI = $endpoint;
+		if(!empty($endpoint)) $this->endPointAPI = $endpoint;
+		return $this;
 	}
 
 	public function all(){
