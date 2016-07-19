@@ -38,11 +38,11 @@ class RajaOngkir {
 	 * Raja Ongkir API Endpoint
 	 * @var string
 	 */
-	protected $endpoint;
+	protected static $endpoint;
 
 	public function setEndpoint($endpoint)
 	{
-		$this->endpoint = $endpoint;
+		self::$endpoint = $endpoint;
 	}
 
 	public function Provinsi(){

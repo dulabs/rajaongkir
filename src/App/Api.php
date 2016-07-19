@@ -19,7 +19,7 @@ abstract class Api {
 
 	public function setEndpoint($endpoint)
 	{
-		$this->endPointAPI = $endPointAPI;
+		$this->endPointAPI = $endpoint;
 	}
 
 	public function all(){
